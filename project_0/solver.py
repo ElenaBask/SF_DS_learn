@@ -1,3 +1,5 @@
+import numpy as np
+
 def accurate_forecast(number:int=1) -> int:
     """ Guessing the number by binary search
     Args:
@@ -19,7 +21,7 @@ def accurate_forecast(number:int=1) -> int:
             break
     return count
 
-import numpy as np
+
 def algorithm_evaluation(repetitions:int=1000) -> int:
     """We check the algorithm's ability to guess the number
        in less than 20 attempts with 1000 or more repetitions
@@ -31,11 +33,33 @@ def algorithm_evaluation(repetitions:int=1000) -> int:
         int: Average number of attempts
     """
     counter = 0
+    max_att = 0
+    min_att = 7
+    
+    if repetitions is None:
+        repetitions = 1000 
+    
     for i in range(1, repetitions+1):
         number = np.random.randint(1, 101) # загадываем число
-        counter += accurate_forecast(number)
-    return round(counter/1000)
+        result =  accurate_forecast(number)
+        counter += result
+        if result < min_att:
+            min_att = result
+        elif result > max_att:
+            max_att = result
+    
+    print(f'Guessed the number from 1 to 100 per {repetitions} repetitions:')
+    print(f'Maximum number of attempts {max_att} \nMinimum number of attempts {min_att}')
+    
+    return round(counter/repetitions)
+
 
 if __name__ == '__main__':
-    rept = int(input('Enter the number of repetitions to test the algorithm '))
-    print(algorithm_evaluation())
+    rept = input('Enter the number of repetitions to test the algorithm ')
+   
+    if rept.isdigit():
+        rept = int(rept)
+    else:
+        rept = None
+   
+    print(f'Average number of attempts {algorithm_evaluation(rept)}')
