@@ -39,6 +39,7 @@ def algorithm_evaluation(repetitions:int=1000) -> int:
     if repetitions is None:
         repetitions = 1000 
     
+    np.random.seed(123)
     for i in range(1, repetitions+1):
         number = np.random.randint(1, 101) # загадываем число
         result =  accurate_forecast(number)
