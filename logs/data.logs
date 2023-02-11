@@ -1,0 +1,19 @@
+INFO: 2023-02-10 21:19:37,000: Data
+INFO: 2023-02-10 21:20:32,763: Data
+INFO: 2023-02-10 21:20:32,763: Data
+INFO: 2023-02-10 21:20:32,768: Data shape (110527, 14)
+INFO: 2023-02-10 21:20:32,768: Data shape (110527, 14)
+INFO: 2023-02-10 21:20:32,803: Percentage of women: 0.653882342398853
+INFO: 2023-02-10 21:20:32,803: Percentage of women: 0.653882342398853
+INFO: 2023-02-10 21:20:32,845: Percentage of men: 0.346117657601147
+INFO: 2023-02-10 21:20:32,845: Percentage of men: 0.346117657601147
+ERROR: 2023-02-10 21:21:40,443: Data shape is incorrect!
+ERROR: 2023-02-10 21:21:40,443: Data shape is incorrect!
+WARNING: 2023-02-11 00:42:38,565: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2023-02-11 00:42:38,565: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2023-02-11 04:27:09,618: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DA85040AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/rest/v2/write/experiment/update-status
+WARNING: 2023-02-11 04:27:09,618: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DA85040AF0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/rest/v2/write/experiment/update-status
+WARNING: 2023-02-11 04:27:23,358: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2023-02-11 04:27:23,358: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.comet.com', port=443): Read timed out. (read timeout=10)")': /clientlib/status-report/update
+WARNING: 2023-02-11 04:27:23,597: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DA850BE560>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/rest/v2/write/experiment/update-status
+WARNING: 2023-02-11 04:27:23,597: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001DA850BE560>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /api/rest/v2/write/experiment/update-status
